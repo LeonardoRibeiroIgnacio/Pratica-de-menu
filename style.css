@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /*DEGRADÊ DE CORES DOS BOTÕES DA NAVEGAÇÃO*/
 @keyframes gradient {
     /*0% {background-position:0 25%;}
@@ -11,20 +15,26 @@
 }
 
 body{
-    margin: 0px;
-
+    background-color:#EEE;
+    font-family:'Lato',Helvetica,Arial;
+    font-size:15px;
+    margin:0;
+    min-height:100vh;
 }
+
+.queijo {
+    max-width:0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
 /*TUDO DO HEADER, NAVEGAÇÃO E BOTÕES*/
 header{
     border-bottom: 1px black solid;
 }
 
 header nav{
-
-}
-
-header p{
-    cursor: pointer
+    cursor: default;
 }
 
 header ul{
@@ -64,3 +74,4 @@ header li:hover{
     justify-content: center;
     color: white;
 }
+
