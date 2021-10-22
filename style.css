@@ -1,0 +1,63 @@
+/*DEGRADÊ DE CORES DOS BOTÕES DA NAVEGAÇÃO*/
+@keyframes gradient {
+    /*0% {background-position:0 25%;}
+    25% {background-position:25% 50%;}
+    50% {background-position:50% 75%;}
+    75% {background-position:75% 100%;}
+    100% {background-position:100% 0%;}
+    */
+    to {background-position:0% 50% ;}
+    from {background-position:100% 50%;}
+}
+
+body{
+    margin: 0px;
+
+}
+/*TUDO DO HEADER, NAVEGAÇÃO E BOTÕES*/
+header{
+    border-bottom: 1px black solid;
+}
+
+header nav{
+
+}
+
+header p{
+    cursor: pointer;
+}
+
+header ul{
+    text-align: center;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-radius: 20%;
+    border: 1px black solid;
+}
+
+header li a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header li a:hover{
+    color: white;
+}
+
+header li:hover{
+    animation: gradient 3s ease alternate infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#0ad31b) no-repeat;
+    background-size: 300% 300%;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
