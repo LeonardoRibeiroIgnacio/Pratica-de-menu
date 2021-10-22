@@ -24,18 +24,21 @@ header nav{
 }
 
 header p{
-    cursor: pointer;
+    cursor: pointer
 }
 
 header ul{
-    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: -6px;
 }
 
 header li{
+    box-shadow: 1px 1px 3px;
     list-style: none;
     display: inline-block;
     padding: 5px;
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: white;
     cursor: pointer;
     border-radius: 20%;
     border: 1px black solid;
@@ -51,7 +54,7 @@ header li a{
 header li a:hover{
     color: white;
 }
-
+/*CONTINUAÇÃO DEGRADÊ*/
 header li:hover{
     animation: gradient 3s ease alternate infinite;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#0ad31b) no-repeat;
